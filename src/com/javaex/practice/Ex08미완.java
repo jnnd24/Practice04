@@ -16,6 +16,7 @@ public class Ex08미완 {
 			}
 			System.out.print(lott[i] + "\t");
 		}
+		//중복 해결 안됨.. 아이디어 필요
 		
 	}
 
