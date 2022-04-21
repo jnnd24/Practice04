@@ -1,6 +1,6 @@
 package com.javaex.practice;
 
-public class Ex08미완 {
+public class Ex08 {
 
 	public static void main(String[] args) {
 
@@ -8,15 +8,14 @@ public class Ex08미완 {
 		
 		for(int i = 0; i<6; i++) {
 			lott[i] = (int)(Math.random()*45+1);
-			for(int j = 0; j<6; j++) {
-				if(lott[i]==lott[j]) {
+			for(int j = 0; j<i; j++) {
+				while(lott[i]==lott[j]) {
 					lott[i] = (int)(Math.random()*45+1);
-					continue;
+					
 				}
 			}
 			System.out.print(lott[i] + "\t");
 		}
-		//중복 해결 안됨.. 아이디어 필요
 		
 	}
 
